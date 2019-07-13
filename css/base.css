@@ -1,0 +1,25 @@
+/* 去除默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 网页居中显示 */
+body {
+    width: 100%;
+    min-width: 1900px;
+    margin: 0 auto;
+    font-family: "Microsoft Yahei", 微软雅黑;
+}
+/* 导航条的字体颜色默认为白色 */
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* 第一屏 ～ 第五屏 每屏高度为 640px */
+.screen-1,
+.screen-2,
+.screen-3,
+.screen-4,
+.screen-5 {
+    height: 640px;
+}

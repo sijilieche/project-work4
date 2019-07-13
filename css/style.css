@@ -1,0 +1,489 @@
+
+/* 导航条 */
+.header {
+    color: #ffffff;
+    position: relative;
+}
+
+.header__wrap {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header__logo {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 8px;
+    background: url("../img/logo.png") no-repeat left center;
+    background-size: 38px 38px;
+    text-indent: 49px;
+}
+
+.header__nav {
+    position: absolute;
+    height: 40px;
+    right: 28px;
+    top: 50%;
+    margin-top: -20px;
+
+}
+
+.header__nav-item {
+    font-size: 14px;
+    display: block;
+    float: left;
+    width: 56px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    text-align: center;
+}
+.header__nav-item_status_active{
+    color: red;
+}
+
+.header__nav-item_underline {
+    background: #ff0000;
+    width: 56px;
+    height: 2px;
+    position: absolute;
+    margin: 42px 0 0px 41px;
+    transition: all .5s;
+}
+
+.header__nav-item_custom_button {
+    width: 95px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ff0000;
+    border-radius: 10px;
+    padding: 0;
+    margin-left: 40px;
+}
+
+/* 第一屏 */
+.screen-1 {
+    background: url("../img/sc1.jpg") no-repeat;
+    /* 背景图片固定存在，铺满整个区域； */
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+}
+/* 内容区域，容器宽度限制为 1200px （不限制背景图片、背景色大小），
+文本居中显示在图片上方 */
+
+.screen1__wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -598px;
+    margin-top: -87px;
+}
+
+.screen-1__heading {
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.screen-1__subheading {
+    font-size: 16px;
+    margin-left: 4px;
+
+}
+
+/* 第二屏 */
+.screen-2 {
+    background-color: #f3f5f7;
+    position: relative;
+    overflow: hidden;
+}
+/* 内容区域，容器宽度限制为 1200px （不限制背景图片、背景色大小），
+文字居中显示，文字在图片上方； */
+.screen-2__wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    margin-top: 88px;
+    left: 50%;
+    margin-left: -600px;
+
+}
+
+.screen-2__heading {
+    font-size: 40px;
+    padding-bottom: 56px;
+}
+.screen-2__underline {
+    background: #ff0000;
+    width: 56px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    margin-left: -28px;
+}
+
+.screen-2__subheading {
+    padding-bottom: 28px;
+}
+
+.screen-2__bat {
+    background: url("../img/sc2.png") no-repeat center;
+    /* 背景图片固定存在，铺满整个区域； */
+    background-size: cover;
+    width: 750px;
+    height: 361px;
+    position: absolute;
+    left: 50%;
+    margin-left: -375px;
+    z-index: 1
+}
+
+.screen-2__uncle {
+    background: url("../img/sc2-1.png") no-repeat center;
+    background-size: cover;
+    width: 275px;
+    height: 380px;
+    position: absolute;
+    left: 50%;
+    margin-left: -137px;
+    z-index: 3;
+}
+
+.screen-2__rocket {
+    background: url("../img/sc2-2.png") no-repeat center;
+    width: 266px;
+    height: 205px;
+    position: absolute;
+    left: 50%;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+/* 第三屏 */
+.screen-3 {
+    position: relative;
+    color: #ffffff;
+    background-color: #2b333b;
+}
+
+.screen-3__sc3 {
+    width: 574px;
+    height: 640px;
+    position: absolute;
+    /* 左侧大图左对齐 */
+    left: 0;
+    top: 50%;
+    margin-top: -320px;
+    margin-left: 127px;
+    background: url("../img/sc3.png") no-repeat;
+    /* 背景图片固定存在，铺满整个区域； */
+    background-size: cover;
+}
+
+.screen-3__wrap {
+    position: absolute;
+    right: 309px;
+    top: 224px;
+}
+
+.screen-3__heading {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.screen-3__underline{
+    background: #ff0000;
+    width: 56px;
+    height: 4px;
+    position: absolute;
+    top: 77px;
+    /* 右侧文本左对齐 */
+    left: 0;
+}
+.screen-3__subheading {
+    font-size: 18px;
+    margin-bottom: 150px;
+}
+
+.screen-3__lan {
+    position: absolute;
+
+    left: 13px;
+}
+/*  5个课程体系不是图片，是使用边框写出来的效果； */
+.screen-3__lan-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 35px;
+    font-size: 14px;
+}
+
+.screen-3__lan-item:first-child {
+    border: 4px solid #1f5975;
+    color: #02b0ff;
+}
+
+.screen-3__lan-item:nth-child(2) {
+    border: 4px solid #424d76;
+    color: #7888fd;
+}
+
+.screen-3__lan-item:nth-child(3) {
+    border: 4px solid #6b4146;
+    color: #ff584c;
+}
+
+.screen-3__lan-item:nth-child(4) {
+    border: 4px solid #29535f;
+    color: #22bdba;
+}
+
+.screen-3__lan-item:last-child {
+    border: 4px solid #3e4e40;
+    color: #90bd4b;
+}
+
+/* 第四屏 */
+.screen-4 {
+    background-color: #f3f5f7;
+    position: relative;
+    overflow: hidden;
+}
+/* 内容区域，容器宽度限制为 1200px （不限制背景图片、背景色大小），
+标题以及分割线均是居中显示； */
+.screen-4__wrap {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 86px;
+}
+
+.screen-4__heading {
+    padding-bottom: 54px;
+    font-size: 40px;
+}
+.screen-4__underline{
+    background: #ff0000;
+    width: 56px;
+    height: 4px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin-left: -23px;
+   margin-top: 21px;
+}
+
+/* 模块的间距相同，并且每个模块的图片和文字居中显示 */
+.screen-4__wrap1 {
+    position: absolute;
+    bottom: 233px;
+    left: 420px;
+}
+
+.screen-4__wrap1-item {
+    width: 162px;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+}
+
+.screen-4__wrap1-item:first-child {
+    padding-right: 138px;
+}
+
+.screen-4__wrap1-item:nth-child(2) {
+    padding-right: 136px;
+}
+
+.screen-4__wrap1-item:nth-child(3) {
+    padding-right: 136px;
+}
+
+.screen-4__wrap1-item__img {
+    width: 80px;
+    height: 75px;
+
+
+    margin-left: 20px;
+    padding-bottom: 22px;
+    margin: 0 auto;
+}
+
+.screen-4__wrap1-item__img1 {
+
+
+    background: url("../img/sc4-1.png") no-repeat;
+}
+
+.screen-4__wrap1-item__img2 {
+
+    background: url("../img/sc4-2.png") no-repeat;
+}
+
+.screen-4__wrap1-item__img3 {
+
+
+    background: url("../img/sc4-3.png") no-repeat;
+}
+
+.screen-4__wrap1-item__img4 {
+
+    background: url("../img/sc4-4.png") no-repeat;
+}
+
+/* 第五屏 */
+.screen-5 {
+    background: url("../img/sc5.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.screen-5__sc5 {
+    /* 人物头部居中显示  */
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 95px;
+    left: 50%;
+    margin-left: -100px;
+    background: url("../img/sc5-1.png") no-repeat;
+    /* 背景图片固定存在，铺满整个区域； */
+    background-size: cover;
+}
+/* 内容区域，容器宽度限制为 1200px （不限制背景图片、背景色大小） */
+.screen-5__wrap {
+    color: #fff;
+    width: 1200px;
+    position: absolute;
+    bottom: 158px;
+    left: 50%;
+    margin-left: -344px;
+}
+/* 标题与文字居中显示，中间的分割线也居中显示；*/
+.screen-5__heading {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 56px;
+    margin-left: -522px;
+}
+.screen-5__underline{
+    background: #fff;
+    width: 56px;
+    height: 4px;
+    position: absolute;
+    left: 26%;
+    margin-top: -28px;
+}
+
+.screen-5__subheading{
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+}
+/* 其他 */
+.screen-6 {
+    height: 200px;
+    position: relative;
+}
+/* 内容区域，容器宽度限制为 1200px （不限制背景图片、背景色大小） */
+.screen-6__wrap {
+    width: 1200px;
+}
+/* 按钮居中显示；按钮的边框带点圆角 ; */
+.screen-6__heading {
+    position: absolute;
+    width: 238px;
+    height: 60px;
+    border: 1px solid #000000;
+    line-height: 60px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -119px;
+    margin-top: -30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* 页脚 */
+.footer {
+    height: 107px;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+/* 内容区域，容器宽度限制为 1200px （不限制背景图片、背景色大小），
+网页版权信息垂直水平居中显示； */
+.footer__wrap {
+    width: 1200px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    margin-top: -30px;
+
+}
+
+.footer__nav {
+    font-size: 12px;
+    color: #c8cdd2;
+    padding-bottom: 10px;
+
+}
+
+.footer__nav__item {
+    padding-right: 32px;
+}
+
+.footer__copyright {
+    color: #787d82;
+}
+/* 页面右侧固定导航栏 */
+.outline{
+    /* 右侧导航栏固定在页面右边，不随页面滚动而滚动； */
+    width: 40px;
+    height: 200px;
+    position: fixed;
+    background: #fff;
+    z-index: 4;
+    right: 0;
+    top: 50%;
+    margin-top: -80px;
+    box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1);
+}
+.outline__item{
+    display: block;
+color: #000;
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+}
+.outline__item_status_active{
+    color: #ff0000;
+}

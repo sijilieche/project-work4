@@ -1,0 +1,278 @@
+/* 第一屏 */
+.header__logo,
+.header__nav,
+.screen-1__heading {
+    transition: all 1s;
+}
+
+/* 大标题先出现，小标题后出现； */
+.screen-1__subheading {
+    transition: all 1s .5s;
+}
+
+.screen-1__heading_animate_init,
+.screen-1__subheading_animate_init {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.screen-1__heading_animate_done,
+.screen-1__subheading_animate_done {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.header__logo_animate_init,
+.header__nav_animate_init {
+    opacity: 0;
+    transform: translate(0, -100%);
+}
+
+.header__logo_animate_done,
+.header__nav_animate_done {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/* 第二屏 */
+.screen-2__heading {
+    transition: all 1s;
+}
+
+.screen-2__underline,
+.screen-2__subheading {
+    transition: all .5s 1s;
+}
+
+.screen-2__uncle {
+    transition: all .1s 1s;
+}
+
+.screen-2__rocket {
+    transition: all .5s 2.3s;
+}
+
+.screen-2__heading_animate_init,
+.screen-2__underline_animate_init,
+.screen-2__subheading_animate_init,
+.screen-2__uncle_animate_init,
+.screen-2__rocket_animate_init {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.screen-2__heading_animate_done,
+.screen-2__underline_animate_done,
+.screen-2__subheading_animate_done,
+.screen-2__uncle_animate_done{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* 小火箭的上下摆动效果 */
+@keyframes swing {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translate(0, 10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.screen-2__rocket_animate_done {
+    -webkit-animation: swing 2s ease-in-out 1s;
+}
+
+/* 第三屏，左侧原子弹图片快速出现 */
+
+.screen-3__sc3 {
+    transition: all .1s;
+}
+
+/* 右侧的大、小图标以及标题分割线同时缓缓进入 */
+.screen-3__heading {
+    transition: all 1s .1s;
+}
+
+.screen-3__underline,
+.screen-3__subheading {
+    transition: all 1s 1s;
+}
+
+.screen-3__lan {
+    transition: all .5s 2s;
+}
+
+.screen-3__sc3_animate_init {
+    opacity: 1;
+    transform: scale(.1);
+}
+
+.screen-3__heading_animate_init,
+.screen-3__underline_animate_init,
+.screen-3__subheading_animate_init,
+.screen-3__lan_animate_init {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.screen-3__heading_animate_done,
+.screen-3__underline_animate_done,
+.screen-3__subheading_animate_done,
+.screen-3__lan_animate_done {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.screen-3__sc3_animate_done {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* 第四屏 */
+/* 大标题与4个模块先出现，1秒后出现小标题与标题分割线； */
+.screen-4__heading {
+    transition: all .8s;
+}
+
+.screen-4__underline,
+.screen-4__subheading {
+    transition: all 1s .8s;
+}
+
+.screen-4__wrap1 {
+    transition: all .8s;
+}
+
+.screen-4__heading_animate_init,
+.screen-4__wrap1_animate_init {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.screen-4__heading_animate_done,
+.screen-4__wrap1_animate_done {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.screen-4__underline_animate_init,
+.screen-4__subheading_animate_init {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.screen-4__underline_animate_done,
+.screen-4__subheading_animate_done {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* 第五屏 */
+/* 大标题先出现，小标题和标题分割线随后出现； */
+.screen-5__sc5 {
+    transition: all .1s;
+}
+
+.screen-5__heading {
+    transition: all 1s .1s;
+}
+
+.screen-5__underline,
+.screen-5__subheading {
+    transition: all 1s 1s;
+}
+
+.screen-5__sc5_animate_init {
+    opacity: 1;
+    transform: translate(-200px, -200px);
+    transform: scale(.3)
+}
+
+.screen-5__heading_animate_init,
+.screen-5__underline_animate_init,
+.screen-5__subheading_animate_init {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.screen-5__heading_animate_done,
+.screen-5__underline_animate_done,
+.screen-5__subheading_animate_done {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.screen-5__sc5_animate_done {
+    opacity: 1;
+    transform: translate(-200px, -200px);
+    transform: scale(1);
+}
+
+/* 第三屏5个课程1秒后再出现，且有呼吸灯效果； */
+@-webkit-keyframes breathing {
+
+    0%,
+    100% {
+        transform: scale(.8);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.screen-3__lan-item {
+    -webkit-animation: breathing 2s infinite 6s;
+}
+
+
+/* 导航条 _status_grey样式 */
+.header {
+    transition: all 1s;
+}
+
+.header_status_grey {
+    background-color: rgb(212, 212, 212, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header_status_grey .header__logo,
+.header_status_grey .header__nav-item {
+    color: #000000;
+}
+
+/* 大纲 _status_in样式*/
+.outline {
+    opacity: 0;
+    transition: all 1s;
+    transform: translate(100%, 0);
+}
+
+.outline_status_in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
